@@ -10,3 +10,13 @@ export const FETCH_USER = gql`
     }
   }
 `
+
+export const GET_LOCAL_USER = gql`
+  query {
+    localUsers {
+      name
+      age
+      gender
+    }
+  }
+`

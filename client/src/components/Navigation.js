@@ -32,6 +32,17 @@ function Navigation() {
             )}
           </div>
         </Link>
+
+         <Link to="/local-user">
+          <div className="relative mr-5">
+            <span className={` ${pathname === '/local-user' ? 'text-gray-900 ' : 'text-gray-500'} hover:text-gray-900`}>
+              Local User
+            </span>
+            {pathname === '/local-user' && (
+              <div className="border border-red-300 absolute inset-x-0" style={{bottom: '-0.8rem'}}></div>
+            )}
+          </div>
+        </Link>
       </div>
     </nav>
   )

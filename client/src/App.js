@@ -4,6 +4,7 @@ import {ApolloProvider} from '@apollo/client'
 import client from './config/client'
 import Navigation from './components/Navigation'
 import Home from './pages/Home'
+import LocalUser from './pages/LocalUser'
 import Detail from './pages/Detail'
 import Add from './pages/Add'
 
@@ -21,6 +22,9 @@ function App() {
               </Route>
               <Route path="/add" exact>
                 <Add />
+              </Route>
+              <Route path="/local-user" exact>
+                <LocalUser />
               </Route>
               <Route path="/:id" exact>
                 <Detail />
